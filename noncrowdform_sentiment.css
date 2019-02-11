@@ -1,0 +1,9 @@
+p.instructions {
+	color: blue;
+}
+
+#submitButton {
+	width: 20em;  
+	height: 2em;
+	background-color: #6495ED;
+}

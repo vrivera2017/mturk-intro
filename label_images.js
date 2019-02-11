@@ -30,7 +30,7 @@ var params = {
 	MaxAssignments: 10, 
 	Question: 
 		`<ExternalQuestion xmlns="http://mechanicalturk.amazonaws.com/AWSMechanicalTurkDataSchemas/2006-07-14/ExternalQuestion.xsd">
-  		<ExternalURL>https://s3.us-east-2.amazonaws.com/veariver-imagelabel/sentiment.html</ExternalURL>
+  		<ExternalURL>https://s3.us-east-2.amazonaws.com/veariver-imagelabel/noncrowdform_sentiment.html</ExternalURL>
   	<FrameHeight>400</FrameHeight>
 	</ExternalQuestion>`
 }; 

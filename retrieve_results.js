@@ -14,7 +14,7 @@ var mturk = new AWS.MTurk();
 var sandbox = true;
 
 
-var myHITId = '3YGYP13643MI6XYNV2H9SLS6Z6NRNL'; 
+var myHITId = '3SZYX62S5ID4YP82IONHTN1K79975S'; 
 
 
 mturk.listAssignmentsForHIT({HITId: myHITId}, function (err, assignmentsForHIT) {
@@ -29,8 +29,8 @@ mturk.listAssignmentsForHIT({HITId: myHITId}, function (err, assignmentsForHIT) 
             /* If you are running this script more than once with the same HITId, then after the first time running
             you will get an error in terminal saying This operation can be called with a status of: Submitted, because
             this part of the listAssignmentsForHIT function is for approving the assignment and paying the worker. 
-             */   
-                 
+             */     
+             
             mturk.approveAssignment({
                 AssignmentId: assignmentsForHIT.Assignments[i].AssignmentId,
                 RequesterFeedback: 'Thanks for the great work!',

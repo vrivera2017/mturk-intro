@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/>
+  <script type='text/javascript' src='https://s3.amazonaws.com/mturk-public/externalHIT_v1.js'></script>
+  <link rel="stylesheet" type="text/css" href="noncrowdform_sentiment.css" media="screen" />
+ </head>
+ <body>
+  <form name='mturk_form' method='post' id='mturk_form' action='https://workersandbox.mturk.com/mturk/externalSubmit'>
+  	<!--use https://www.mturk.com/mturk/externalSubmit for action when used in production -->
+  	<input type='hidden' value='' name='assignmentId' id='assignmentId'/>
+  	<h1>Text Sentiment Analysis</h1>
+  	<p class="instructions"> <strong>Instructions: Choose the option that you think best describes the sentiment conveyed in each short excerpt. If you think that none of the sentiment options describe the text, you may choose the None option. Please answer all questions. You will not be able to submit the form until all questions have been answered.</strong> </p>
+
+  	<p> <span class="excerpt"> 1. All our dreams can come true if we have the power to pursue them. </span><br>
+  		<input type='radio' name='Question 1' value='Happy' required>Happy<br>
+  		<input type='radio' name='Question 1' value='Sad'>Sad<br>
+  		<input type='radio' name='Question 1' value='Frustrated'>Frustrated<br>
+  		<input type='radio' name='Question 1' value='Surprised'>Surprised<br>
+  		<input type='radio' name='Question 1' value='Neutral'>Neutral<br>
+  		<input type='radio' name='Question 1' value='None'>None<br>
+  	</p>
+  	<p> <span class="excerpt"> 2. I don’t know what I expected, but it was nothing like what I found. Two ancient lamps burned fish oil, throwing dim shadows against the dark stone walls. There were six cots in the room, all occupied. Two children that were hardly more than babies shared a blanket on the stone floor, and another was curled up in a pile of rags. A boy my age sat in a dark corner, his head pressed against the wall. </span><br>
+  		<input type='radio' name='Question 2' value='Happy' required>Happy<br>
+  		<input type='radio' name='Question 2' value='Sad'>Sad<br>
+  		<input type='radio' name='Question 2' value='Frustrated'>Frustrated<br>
+  		<input type='radio' name='Question 2' value='Surprised'>Surprised<br>
+  		<input type='radio' name='Question 2' value='Neutral'>Neutral<br>
+  		<input type='radio' name='Question 2' value='None'>None<br>
+  	</p>
+  	<p> <span class="excerpt"> 3. Pad thai noodles are the best with chicken. Great flavors! Just the right amount of spicy. I also enjoyed the spring rolls because of the peanut sauce. Heck yeah!!</span><br>
+  		<input type='radio' name='Question 3' value='Happy' required>Happy<br>
+  		<input type='radio' name='Question 3' value='Sad'>Sad<br>
+  		<input type='radio' name='Question 3' value='Frustrated'>Frustrated<br>
+  		<input type='radio' name='Question 3' value='Surprised'>Surprised<br>
+  		<input type='radio' name='Question 3' value='Neutral'>Neutral<br>
+  		<input type='radio' name='Question 3' value='None'>None<br>
+  	</p>
+  	<p> <span class="excerpt"> 4. I really expected more from her. I didn’t think that she would betray me like that, especially because we have been friends for so long. I thought that we would also be by each other’s side through good times and bad times. If I can’t trust her, then who can I trust? I just feel so hopeless and lost. </span><br>
+  		<input type='radio' name='Question 4' value='Happy' required>Happy<br>
+  		<input type='radio' name='Question 4' value='Sad'>Sad<br>
+  		<input type='radio' name='Question 4' value='Frustrated'>Frustrated<br>
+  		<input type='radio' name='Question 4' value='Surprised'>Surprised<br>
+  		<input type='radio' name='Question 4' value='Neutral'>Neutral<br>
+  		<input type='radio' name='Question 4' value='None'>None<br>
+  	</p>
+  	<p> <span class="excerpt"> 5. My appointment was supposed to be at 10:00. It is now 11:30 and my name has not been called. This is just ridiculous. When I return home I am going to call customer service to tell them about my horrible experience. </span><br>
+  		<input type='radio' name='Question 5' value='Happy' required>Happy<br>
+  		<input type='radio' name='Question 5' value='Sad'>Sad<br>
+  		<input type='radio' name='Question 5' value='Frustrated'>Frustrated<br>
+  		<input type='radio' name='Question 5' value='Surprised'>Surprised<br>
+  		<input type='radio' name='Question 5' value='Neutral'>Neutral<br>
+  		<input type='radio' name='Question 5' value='None'>None<br>
+  	</p>
+  	<!--<p><textarea name='comment' cols='80' rows='3'></textarea></p>-->
+  	<p><input type='submit' id='submitButton' value='Submit' /></p>
+  </form>
+  <script language='Javascript'>turkSetAssignmentID();</script>
+ </body>
+</html>
